@@ -5,5 +5,6 @@
 		./programs
 		./fonts
 		./langs
+		./utils
 	];
 }
