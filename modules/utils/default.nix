@@ -7,5 +7,6 @@
 		tree-sitter
 		ripgrep
 		xclip
+		fzf
 	];
 }
