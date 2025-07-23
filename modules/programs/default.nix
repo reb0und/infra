@@ -10,5 +10,6 @@
 		./fish.nix
 		./yazi.nix
 		./ghostty.nix
+		./hyprland.nix
 	];
 }
