@@ -7,5 +7,6 @@
 		./tmux.nix
 		./starship.nix
 		./btop.nix
+		./fish.nix
 	];
 }
