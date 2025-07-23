@@ -1,5 +1,5 @@
-{ pkgs, config, ... }:
+{ pkgs, config, home, ... }:
 
 {
-	programs.sww.enable = true;
+	home.packages = [ pkgs.swww ];
 }
