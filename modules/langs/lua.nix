@@ -2,7 +2,7 @@
 
 {
 	home.packages = with pkgs; [
-		lua
+		lua51Packages.lua
 		lua54Packages.luarocks
 		stylua
 	];
