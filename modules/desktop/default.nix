@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 
 {
-	import [
+	imports = [
 		./hyprland.nix
 		./waybar.nix
 	];
