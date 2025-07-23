@@ -5,5 +5,7 @@
 		./git.nix
 		./nvim.nix
 		./tmux.nix
+		./starship.nix
+		./btop.nix
 	];
 }
