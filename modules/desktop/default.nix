@@ -4,6 +4,6 @@
 	imports = [
 		./hyprland.nix
 		./waybar.nix
-		./mako.nix
+		./dunst.nix
 	];
 }
