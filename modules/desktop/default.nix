@@ -6,5 +6,6 @@
 		./waybar.nix
 		./mako.nix
 		./swww.nix
+		./rofi.nix
 	];
 }
