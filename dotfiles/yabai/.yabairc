@@ -1,0 +1,26 @@
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# Window gaps
+yabai -m config 				 \
+	window_gap               10              \
+	top_padding              10              \
+	bottom_padding           10              \
+	left_padding             10              \
+	right_padding            10              \
+						 \
+	layout                   bsp             \
+	mouse_modifier           alt             \
+	mouse_action1            move            \
+	mouse_action2            resize          \
+	focus_follows_mouse      off	         \
+	window_shadow            on              \
+	window_opacity           on              \
+	active_window_opacity    0.75   	 \
+	normal_window_opacity    0.75            
+
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+
+
+yabai --start-service
