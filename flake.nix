@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # hyprland.url = "github:hyperwm/Hyprland";
+    hyprland.url = "github:hyprwm/hyprland";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
