@@ -9,5 +9,6 @@
 		./btop.nix
 		./fish.nix
 		./yazi.nix
+		./ghostty.nix
 	];
 }
