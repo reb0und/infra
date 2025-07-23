@@ -1,10 +1,10 @@
 { pkgs, config, home, ... }:
 
 {
-	home.packages = [
+	home.packages = with pkgs; [
 		wget
 		unzip
-		treesitter
+		tree-sitter
 		ripgrep
 	];
 }
