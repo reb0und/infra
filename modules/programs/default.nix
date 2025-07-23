@@ -8,5 +8,6 @@
 		./starship.nix
 		./btop.nix
 		./fish.nix
+		./yazi.nix
 	];
 }
