@@ -1,5 +1,7 @@
 { pkgs, config, home, ... }:
 
 {
-	programs.rofi-wayland.enable = true;
+	home.packages = [ pkgs.rofi-wayland ];
+
+	home.file.".config/rofi".source = config.lib.file.mkOutOfStoreSymlink "/home/dominic/dotfiles/rofi";
 }
