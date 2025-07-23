@@ -6,5 +6,6 @@
 		./fonts
 		./langs
 		./utils
+		./desktop
 	];
 }
