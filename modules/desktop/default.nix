@@ -7,5 +7,6 @@
 		./mako.nix
 		./swww.nix
 		./rofi.nix
+		./nmapplet.nix
 	];
 }
