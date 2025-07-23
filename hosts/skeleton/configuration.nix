@@ -12,16 +12,16 @@
     ];
 
   # Bootloader.
-	boot = {
-	  loader.systemd-boot.enable = true;
-	  loader.efi.canTouchEfiVariables = true;
-	  initrd.luks.devices."luks-36bdc633-7df8-45e8-95ae-68f04d9c7537".device = "/dev/disk/by-uuid/36bdc633-7df8-45e8-95ae-68f04d9c7537";
-	};
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    initrd.luks.devices."luks-36bdc633-7df8-45e8-95ae-68f04d9c7537".device = "/dev/disk/by-uuid/36bdc633-7df8-45e8-95ae-68f04d9c7537";
+  };
 
-	networking = {
-		hostName = "skeleton";
-		networkmanager.enable = true;
-	};
+  networking = {
+	  hostName = "skeleton";
+	  networkmanager.enable = true;
+  };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -29,7 +29,7 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
@@ -117,14 +117,26 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     fish
+    kitty
   #  wget
   ];
 
-	programs = {
-		fish.enable = true;
-		vim.enable = true;
-	  	firefox.enable = true;
-	};
+  programs = {
+    fish.enable = true;
+    vim.enable = true;
+    firefox.enable = true;
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    # package = inputs.hyprland.packags."${pkgs.system}".hyprland;
+  };
+
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
