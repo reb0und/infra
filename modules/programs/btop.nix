@@ -3,5 +3,5 @@
 {
 	programs.btop.enable = true;
 
-	home.file.".config/btop".source = config.lib.mkOutOfStoreSymLink "/home/dominic/dotfiles/btop";
+	home.file.".config/btop".source = config.lib.mkOutOfStoreSymlink "/home/dominic/dotfiles/btop";
 }
