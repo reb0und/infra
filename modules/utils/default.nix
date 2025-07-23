@@ -6,5 +6,6 @@
 		unzip
 		tree-sitter
 		ripgrep
+		xclip
 	];
 }
