@@ -1,7 +1,7 @@
 { pkgs, config, home, ... }:
 
 {
-	programs.tmux.enable = true;
+	home.packages = [ pkgs.tmux ];
 
-	home.file.".tmux.conf".source = ../../dotfiles/tmux/.tmux.conf;
+	home.file.".config/tmux/tmux.conf".source =  config.lib.file.mkOutOfStoreSymlink "/home/dominic/dotfiles/tmux/.tmux.conf";
 }
