@@ -3,5 +3,6 @@
 {
 	imports = [
 		./c.nix
+		./lua.nix
 	];
 }
