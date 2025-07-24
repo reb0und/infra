@@ -8,5 +8,6 @@
 		./swww.nix
 		./rofi.nix
 		./nmapplet.nix
+		./hyprlock.nix
 	];
 }
