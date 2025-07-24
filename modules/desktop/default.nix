@@ -9,5 +9,7 @@
 		./rofi.nix
 		./nmapplet.nix
 		./hyprlock.nix
+		./hypridle.nix
+		./hyprsunset.nix
 	];
 }
