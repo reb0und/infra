@@ -11,5 +11,6 @@
 		wl-clipboard
 		hyprshot
 		hyprpicker
+		hyprpolkitagent
 	];
 }

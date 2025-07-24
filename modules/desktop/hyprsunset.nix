@@ -1,4 +1,4 @@
-{ pkgs, config, home, }:
+{ pkgs, config, home, ... }:
 
 {
 	home.packages = [ pkgs.hyprsunset ];
