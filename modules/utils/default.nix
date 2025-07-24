@@ -8,5 +8,7 @@
 		ripgrep
 		xclip
 		fzf
+		wl-clipboard
+		hyprshot
 	];
 }
