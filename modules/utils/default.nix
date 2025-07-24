@@ -10,5 +10,6 @@
 		fzf
 		wl-clipboard
 		hyprshot
+		hyprpicker
 	];
 }
