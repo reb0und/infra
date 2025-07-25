@@ -15,5 +15,6 @@
 		cliphist
 		xbindkeys
 		brightnessctl
+		playerctl
 	];
 }
