@@ -16,5 +16,6 @@
 		xbindkeys
 		brightnessctl
 		playerctl
+		eza
 	];
 }
