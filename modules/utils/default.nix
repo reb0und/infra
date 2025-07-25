@@ -17,5 +17,7 @@
 		brightnessctl
 		playerctl
 		eza
+		bat
+		fastfetch
 	];
 }
