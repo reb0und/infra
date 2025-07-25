@@ -1,6 +1,8 @@
-{ pkgs, config, home, ... }:
+{ pkgs, config, home, inputs, ... }:
 
 {
+	imports = [ inputs.zen-browser.homeModules.beta ];
+
 	programs.zen-browser = {
 		enable = true;
 		policies = {
