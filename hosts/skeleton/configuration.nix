@@ -143,7 +143,7 @@
   };
 
 
-  # @TODO: Set up Yubi Key
+  # @TODO: Set up YubiKey
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
