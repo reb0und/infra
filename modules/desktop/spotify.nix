@@ -1,5 +1,5 @@
-{ pkgs, config, home, }:
+{ pkgs, config, home, ... }:
 
 {
-	programs.spotify.enable = true;
+	home.packages = [ pkgs.spotify ];
 }
