@@ -12,5 +12,6 @@
 		./hypridle.nix
 		./hyprsunset.nix
 		./hyprcursor.nix
+		./wlogout.nix
 	];
 }
