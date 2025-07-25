@@ -12,5 +12,6 @@
 		hyprshot
 		hyprpicker
 		hyprpolkitagent
+		cliphist
 	];
 }
