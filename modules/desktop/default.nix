@@ -14,7 +14,7 @@
 		./hyprcursor.nix
 		./wlogout.nix
 		./zen.nix
-		./spotify.nix
+		# ./spotify.nix
 		./spicetify.nix
 	];
 }
