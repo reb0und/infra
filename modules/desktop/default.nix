@@ -15,6 +15,5 @@
 		./wlogout.nix
 		./zen.nix
 		./spotify.nix
-		./spicetify.nix
 	];
 }
