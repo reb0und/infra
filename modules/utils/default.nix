@@ -14,5 +14,6 @@
 		hyprpolkitagent
 		cliphist
 		xbindkeys
+		brightnessctl
 	];
 }
