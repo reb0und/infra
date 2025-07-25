@@ -1,7 +1,7 @@
-{ pkgs, config, home, ... }:
+{ pkgs, config, home, inputs, ... }:
 
 {
 	home.packages = [
-		rose-pine-hyprcursor.packages.${pkgs.system}.default;
+		inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
 	];
 }
