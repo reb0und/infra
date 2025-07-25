@@ -16,6 +16,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprland/hyprlang";
     };
+
+    zen-browser {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {

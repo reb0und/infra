@@ -13,5 +13,6 @@
 		./hyprsunset.nix
 		./hyprcursor.nix
 		./wlogout.nix
+		./zen.nix
 	];
 }
