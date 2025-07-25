@@ -13,5 +13,6 @@
 		hyprpicker
 		hyprpolkitagent
 		cliphist
+		xbindkeys
 	];
 }
