@@ -11,5 +11,6 @@
 		./hyprlock.nix
 		./hypridle.nix
 		./hyprsunset.nix
+		./hyprcursor.nix
 	];
 }
