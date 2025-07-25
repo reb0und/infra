@@ -19,6 +19,5 @@
 		eza
 		bat
 		fastfetch
-		spicetify-cli
 	];
 }
