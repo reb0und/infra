@@ -15,5 +15,6 @@
 		./wlogout.nix
 		./zen.nix
 		./spicetify.nix
+		./discord.nix
 	];
 }
