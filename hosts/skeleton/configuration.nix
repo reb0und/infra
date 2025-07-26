@@ -154,6 +154,11 @@
 
   services.udev.packages = [ pkgs.yubikey-personalization ];
 
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+  };
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
