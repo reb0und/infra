@@ -21,7 +21,8 @@
 			      Locked = true;
 			      Cryptomining = true;
 			      Fingerprinting = true;
-			    };
+				# @TODO: Add extensions
+			};
 		};
 	};
 }
