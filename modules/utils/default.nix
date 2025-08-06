@@ -19,5 +19,6 @@
 		eza
 		bat
 		fastfetch
+		fd
 	];
 }
