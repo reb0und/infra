@@ -4,5 +4,5 @@
 {
 	programs.alacritty.enable = true;
 
-	# home.file.".config/btop".source = config.lib.file.mkOutOfStoreSymlink "/home/dominic/dotfiles/btop";
+	home.file.".config/alacritty".source = config.lib.file.mkOutOfStoreSymlink "/home/dominic/dotfiles/alacritty";
 }
