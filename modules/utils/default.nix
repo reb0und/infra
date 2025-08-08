@@ -20,5 +20,6 @@
 		bat
 		fastfetch
 		fd
+		qemu
 	];
 }
