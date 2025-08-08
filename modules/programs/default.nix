@@ -11,6 +11,5 @@
 		./yazi.nix
 		./ghostty.nix
 		./tiny.nix
-		./alacritty.nix
 	];
 }
