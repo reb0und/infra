@@ -1,3 +1,4 @@
+# @TODO: Create way to declare color theme and extension configuration
 { pkgs, config, home, inputs, ... }:
 
 {
