@@ -21,5 +21,6 @@
 		fastfetch
 		fd
 		qemu
+		gnumake
 	];
 }
