@@ -1,4 +1,4 @@
-# @TODO: Create way to declare color theme and extension configuration
+# @TODO: Create way to declare color theme, extension configuration, set default search engine
 { pkgs, config, home, inputs, ... }:
 
 {
