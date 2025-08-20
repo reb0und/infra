@@ -11,5 +11,6 @@
 		./yazi.nix
 		./ghostty.nix
 		./tiny.nix
+		./wgnord.nix
 	];
 }
