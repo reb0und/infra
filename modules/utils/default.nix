@@ -22,6 +22,5 @@
 		fd
 		qemu
 		gnumake
-		jq
 	];
 }
