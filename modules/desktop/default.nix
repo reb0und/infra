@@ -16,6 +16,5 @@
 		./zen.nix
 		./spicetify.nix
 		./vesktop.nix
-		./thunderbird.nix
 	];
 }
