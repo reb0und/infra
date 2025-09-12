@@ -160,6 +160,8 @@
 
   virtualisation.docker.enable = true;
 
+  services.tailscale.enable = true;
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
