@@ -94,7 +94,7 @@
   users.users.dominic = {
     isNormalUser = true;
     description = "dominic";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.fish;
     packages = with pkgs; [
     #  thunderbird
@@ -157,6 +157,8 @@
     login.u2fAuth = true;
     sudo.u2fAuth = true;
   };
+
+  virtualisation.docker.enable = true;
 
   # List services that you want to enable:
 
