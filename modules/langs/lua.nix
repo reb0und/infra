@@ -5,5 +5,6 @@
 		lua51Packages.lua
 		lua54Packages.luarocks
 		stylua
+		lua-language-server
 	];
 }
