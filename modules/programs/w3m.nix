@@ -1,7 +1,5 @@
 { pkgs, config, home, ... }:
 
 {
-	home.packages = [
-		pkgs.w3m
-	];
+	home.packages = [ pkgs.w3m ];
 }
