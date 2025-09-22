@@ -1,5 +1,7 @@
 { pkgs, config, home, ... }:
 
 {
-	programs.w3m.enable = true;
+	home.packages = [
+		pkgs.w3m
+	];
 }
