@@ -20,7 +20,5 @@
 		bat
 		fastfetch
 		fd
-		qemu
-		gnumake
 	];
 }
