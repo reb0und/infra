@@ -1,3 +1,4 @@
+# @TODO: Set up SOPS to manage SSH configuration
 {
   description = "NixOS config flake";
 
@@ -23,6 +24,9 @@
     };
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    nix-ld.url = "github:nix-community/nix-ld";
+    nix-ld.follows.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
