@@ -25,8 +25,10 @@
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
-    nix-ld.url = "github:nix-community/nix-ld";
-    nix-ld.follows.inputs.nixpkgs.follows = "nixpkgs";
+    nix-ld = {
+      url = "github:nix-community/nix-ld";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {

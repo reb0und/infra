@@ -2,6 +2,6 @@
 
 {
 	imports = [
-		./nix-ld
+		./nix-ld.nix
 	];
 }
