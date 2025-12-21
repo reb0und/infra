@@ -3,9 +3,9 @@
 {
 	programs.git = {
 		enable = true;
-		userName = "reb0und";
-		userEmail = "me@rebound.sh";
-		extraConfig = {
+		settings = {
+			userName = "reb0und";
+			userEmail = "me@rebound.sh";
 			core.editor = "nvim";
 			init.defaultBranch = "main";
 		};
