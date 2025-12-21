@@ -1,7 +1,7 @@
 { pkgs, config, home, ... }:
 
 {
-	home.packages = [ pkgs.rofi-wayland ];
+	home.packages = [ pkgs.rofi ];
 
-	home.file.".config/rofi".source = config.lib.file.mkOutOfStoreSymlink "/home/dominic/dotfiles/rofi";
+	home.file.".config/rofi".source = config.lib.file.mkOutOfStoreSymLink "/home/dominic/dotfiles/rofi";
 }
