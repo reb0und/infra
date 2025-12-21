@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
-      ../../modules/system
+      ../../modules
     ];
 
   # Bootloader.
@@ -133,7 +133,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+    package = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}".hyprland;
   };
 
   xdg.portal.enable = true;
