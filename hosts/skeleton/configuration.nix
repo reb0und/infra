@@ -98,6 +98,9 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.fish;
     packages = with pkgs; [
+      kitty
+      alacritty
+      hyprlauncher
     #  thunderbird
     ];
   }; 
@@ -134,8 +137,16 @@
     enable = true;
     xwayland.enable = true;
     package = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}".hyprland;
+    portalPackage = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}".xdg-desktop-portal-hyprland;
   };
 
+  xdg.port = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk 
+      xdg-desktop-portal-hyprland 
+    ];
+  };
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
