@@ -17,8 +17,6 @@
 				system = system;
 				modules = [ ./configuration.nix ];
 				format = "qcow";
-				qemuOptions = {
-				};
 			};
 		};
 }
