@@ -17,9 +17,11 @@
 				system = system;
 				modules = [ ./configuration.nix ];
 				format = "qcow2";
-				diskSize = 30 * 1024;
-				memorySize = 4096;
-				cores = 4;
+				qemuOptions = {
+					diskSize = 30 * 1024;
+					memorySize = 4096;
+					cores = 4;
+				};
 			};
 		};
 }
