@@ -2,8 +2,9 @@
 
 {
 	boot.loader = {
-		systemd-boot.enable = true;
-		efi.canTouchEfiVariables = true;
+		grub.enable = true;
+		grub.version = 2;
+		grub.device = "/dev/vda";
 	};
 
 	users.users.hajin = {
