@@ -27,7 +27,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command", "flakes" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -60,7 +60,7 @@
   users.users.dominic = {
     isNormalUser = true;
     description = "dominic";
-    extraGroups = [ "networkmanager" "wheel", "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [];
   };
 
