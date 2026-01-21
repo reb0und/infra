@@ -40,5 +40,13 @@
       ];
 
     };
+
+    nixosConfigurations.sparrow = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/sparrow/configuration.nix
+      ];
+
+    };
   };
 }
