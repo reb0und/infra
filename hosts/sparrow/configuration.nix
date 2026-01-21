@@ -71,12 +71,16 @@
   #  wget
     vim
     fish
+    qemu_kvm
   ];
 
   programs = {
    fish.enable = true;
    vim.enable = true;
   };
+
+
+  virtualisation.libvirtd.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
