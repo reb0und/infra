@@ -8,7 +8,7 @@
 
 	users.users.hajin = {
 		isNormalUser = true;
-		extraGroups = [ "wheel" ];
+		extraGroups = [ "wheel" "docker" ];
 		initialPassword = "hi";
 	};
 
@@ -18,7 +18,15 @@
 		vim
 	];
 
-	virtualisation.diskSize = 30 * 1024;
+	virtualisation = {
+		diskSize = 30 * 1024;
+		docker.enable = true;
+	};
+
+	services = {
+		openssh.enable = true;
+		tailscale.enable = true;
+	};
 
 	system.stateVersion = "25.11";
 }
