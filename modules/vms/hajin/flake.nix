@@ -16,7 +16,7 @@
 			image = nixos-generators.nixosGenerate {
 				system = system;
 				modules = [ ./configuration.nix ];
-				formats = [ "qcow2" ];
+				format = "qcow";
 				qemuOptions = {
 				};
 			};
