@@ -21,7 +21,6 @@
 	virtualisation = {
 		diskSize = 30 * 1024;
 		memorySize = 4096;
-		cores = 4;
 	};
 
 	system.stateVersion = "25.11";
