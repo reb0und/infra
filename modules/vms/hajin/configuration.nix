@@ -18,10 +18,7 @@
 		vim
 	];
 
-	virtualisation = {
-		diskSize = 30 * 1024;
-		memorySize = 4096;
-	};
+	virtualisation.diskSize = 30 * 1024;
 
 	system.stateVersion = "25.11";
 }
