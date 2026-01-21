@@ -16,6 +16,7 @@
 		fish
 		git
 		vim
+		qemu_kvm
 	];
 
 	virtualisation = {
