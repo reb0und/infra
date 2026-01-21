@@ -5,4 +5,10 @@
 		./qemu.nix
 		./hajin
 	];
+
+	virtualisation = {
+		libvirtd = {
+			enable = true;
+		};
+	};
 }
