@@ -18,7 +18,7 @@
 		vim
 	];
 
-	virtualisation.qemu = {
+	virtualisation = {
 		diskSize = 30 * 1024;
 		memorySize = 4096;
 		cores = 4;
