@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/vms
     ];
 
   # Bootloader.
@@ -58,7 +59,7 @@
   users.users.dominic = {
     isNormalUser = true;
     description = "dominic";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel", "libvirtd" ];
     packages = with pkgs; [];
   };
 
