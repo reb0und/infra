@@ -6,7 +6,7 @@
 		after = [ "network.target" ];
 		serviceConfig = {
 			ExecStart = ''
-				qemu-x86_64 \
+				qemu-system-x86_64 \
 				-nographic \
 				-kda /home/dominic/images/hajin/hajin.qcow2 \
 				-m 4096 \
@@ -16,7 +16,7 @@
 			Restart = "always";
 			KillMode = "process";
 			TimeoutStopSec = 30;
-			StandardInput = null;
+			StandardInput = "null";
 		};
 		wantedBy = [ "default.target" ];
 	};
