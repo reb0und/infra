@@ -17,6 +17,8 @@
 			KillMode = "process";
 			TimeoutStopSec = 30;
 			StandardInput = "null";
+			User = "dominic";
+			Group = "dominic";
 		};
 		wantedBy = [ "default.target" ];
 	};
