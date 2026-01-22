@@ -59,6 +59,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dominic = {
+    linger = true;
     isNormalUser = true;
     description = "dominic";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
