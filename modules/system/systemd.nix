@@ -7,7 +7,7 @@
 		path = [ pkgs.qemu ];
 		serviceConfig = {
 			ExecStart = ''
-				/run/current-system/sw/bin/qemu-system-x86_64 \
+				${pkgs.qemu}/bin//qemu-system-x86_64 \
 				-nographic \
 				-hda /home/dominic/images/hajin/hajin.qcow2 \
 				-m 4096 \
