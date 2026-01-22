@@ -1,10 +1,10 @@
-{ config, pkgs, ... }:
+ config, pkgs, ... }:
 
 {
 	systemd.user.services.hajin-vm = {
 		description = "Hajin VM"; enable = true;
 		after = [ "network.target" ];
-		servicesConfig = {
+		serviceConfig = {
 			ExecStart = ''
 				qemu-x86_64 \
 				-nographic \
