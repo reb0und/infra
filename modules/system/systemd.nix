@@ -1,7 +1,7 @@
  config, pkgs, ... }:
 
 {
-	systemd.user.services.hajin-vm = {
+	systemd.user.services."hajin-vm" = {
 		description = "Hajin VM"; enable = true;
 		after = [ "network.target" ];
 		path = [ pkgs.qemu ];
