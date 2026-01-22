@@ -24,7 +24,7 @@
 		wantedBy = [ "default.target" ];
 	};
 
-	systemd.user.services.hajin-vm = {
+	systemd.user.services.hajin = {
 		description = "Hajin VM"; enable = true;
 		after = [ "network.target" ];
 		path = [ pkgs.qemu ];
