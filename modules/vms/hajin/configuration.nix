@@ -16,12 +16,6 @@
 		];
 	};
 
-	packages.${system}.image = nixos-generators.nixosGenerate {
-		inherit system;
-        	modules = [ ./configuration.nix ];
-        	format = "qcow";
-	};
-
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 	environment.systemPackages = with pkgs; [
