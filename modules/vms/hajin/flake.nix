@@ -18,5 +18,11 @@
 				modules = [ ./configuration.nix ];
 				format = "qcow";
 			};
+
+
+			nixosConfigurations.hajin = nixpkgs.lib.nixosSystem {
+				inherit system;
+				modules = [ ./configuration.nix ];
+			};
 		};
 }
