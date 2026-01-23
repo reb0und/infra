@@ -21,6 +21,8 @@
 		vim
 	];
 
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 	virtualisation = {
 		diskSize = 30 * 1024;
 		docker.enable = true;
