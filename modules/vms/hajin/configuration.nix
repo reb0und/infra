@@ -12,6 +12,7 @@
 		initialPassword = "hi";
 		openssh.authorizedKeys.keys = [
 			"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID0fQldW2bHZphOxdLX+qQgLmvGHX3yTx/JbpiW7RUc0 zero734kr@gmail.com"
+			"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ2vY3uVDZbTm8NYFPXSXswwxaKZ/BMc4MaIzrKyG1u1 dominic@skeleton"
 		];
 	};
 
