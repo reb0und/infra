@@ -34,7 +34,7 @@
 				-nographic \
 				-hda /home/dominic/images/hajin/hajin.qcow2 \
 				-m 4096 \
-				-smp 4 \
+				-smp 8 \
 				-netdev user,id=net0,hostfwd=tcp::11223-:22 \
 				-device virtio-net-pci,netdev=net0 \
 				-enable-kvm
