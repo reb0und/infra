@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../modules/system/systemd.nix
+      ./wg.nix
     ];
 
   # Bootloader.
