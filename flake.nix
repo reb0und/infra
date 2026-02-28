@@ -29,6 +29,11 @@
       url = "github:nix-community/nix-ld";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -45,8 +50,8 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/sparrow/configuration.nix
+        sops-nix.nixosModules.sops
       ];
-
     };
   };
 }
