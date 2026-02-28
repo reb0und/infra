@@ -50,7 +50,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/sparrow/configuration.nix
-        sops-nix.nixosModules.sops
+        inputs.sops-nix.nixosModules.sops
       ];
     };
   };
