@@ -42,6 +42,7 @@
       modules = [
         ./hosts/skeleton/configuration.nix
         inputs.home-manager.nixosModules.default
+        inputs.sops-nix.nixosModules.sops
       ];
 
     };
