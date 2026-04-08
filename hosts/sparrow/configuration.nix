@@ -20,6 +20,9 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "sparrow"; # Define your hostname.
+
+  nix.package = pkgs.lixPackageSets.stable.lix;
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
