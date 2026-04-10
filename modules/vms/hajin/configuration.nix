@@ -25,7 +25,7 @@
 	];
 
 	virtualisation = {
-		diskSize = 30 * 1024;
+		diskSize = 50 * 1024;
 		docker.enable = true;
 	};
 
