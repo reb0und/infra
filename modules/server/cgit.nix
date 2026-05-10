@@ -9,7 +9,13 @@
 		nginx.virtualHost = "cgit.localhost";
 		nginx.location = "/";
 
-		scanPath = "/srv/cgit";
+		repos = {
+			# @TODO: Link remote source here
+			infra = {
+				desc = "nixos cfg";
+				path = "~/infra/.git";
+			};
+		};
 	};
 
 	# create cfg symlink
