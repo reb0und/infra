@@ -78,6 +78,7 @@
   #  wget
     vim
     fish
+    git
     qemu_kvm
   ];
 
