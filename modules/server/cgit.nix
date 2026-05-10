@@ -1,8 +1,7 @@
 { config, pkgs, ... }:
 
 {
-	pkgs.cgit.enable = true;
-
+	environment.systemPackages = pkgs.cgit;
 	# create cfg symlink
 
 	# systemd.user.services.cgit = {
