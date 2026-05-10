@@ -13,26 +13,16 @@
 			# @TODO: Link remote source here
 			infra = {
 				desc = "nixos cfg";
-				path = "~/infra/.git";
+				path = "/srv/cgit/infra";
 			};
 		};
+
+		settings = {
+			root-title = "git";
+			root-desc = "";
+			header = "";
+			footer = "";
+			logo-link = "https://rebound.sh";
+		};
 	};
-
-	# create cfg symlink
-
-	# systemd.user.services.cgit = {
-	# 	description = "cgit"; enable = true;
-	# 	# after = [ "network.target" ];
-	# 	path = [ pkgs.cgit ];
-	# 	serviceConfig = {
-	# 		ExecStart = ''
-	# 			${pkgs.qemu}
-	# 		'';
-	# 		Restart = "always";
-	# 		KillMode = "process";
-	# 		TimeoutStopSec = 30;
-	# 		StandardInput = "null";
-	# 	};
-	# 	wantedBy = [ "default.target" ];
-	# };
 }
