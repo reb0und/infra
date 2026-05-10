@@ -3,7 +3,7 @@
 {
 	environment.systemPackages = [ pkgs.cgit ];
 
-	services.cgit.main.enable.repos = true;
+	services.cgit.main.enable = true;
 	# create cfg symlink
 
 	# systemd.user.services.cgit = {
