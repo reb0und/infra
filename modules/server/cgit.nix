@@ -7,7 +7,7 @@
 		enable = true;
 
 		nginx.virtualHost = "cgit.localhost";
-		nginx.location = "/cgit";
+		nginx.location = "/";
 
 		scanPath = "/srv/cgit";
 	};
