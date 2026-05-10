@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
 	environment.systemPackages = [ pkgs.cgit ];
 	# create cfg symlink
 
