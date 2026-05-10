@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
 	pkgs.cgit.enable = true;
 
 	# create cfg symlink
