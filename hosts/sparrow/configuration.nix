@@ -109,6 +109,11 @@
     enable = true;
     role = "server";
     clusterInit = true;
+    extraFlags = [
+      "--node-ip=155.246.36.10"
+      "--disable-network-policy"
+      "--flannel-backend=none"
+    ];
   };
 
   # Open ports in the firewall.
