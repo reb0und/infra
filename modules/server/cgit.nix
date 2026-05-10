@@ -9,7 +9,7 @@
 		nginx.virtualHost = "cgit.localhost";
 		nginx.location = "/cgit";
 
-		scanPath = "/cgit";
+		scanPath = "/srv/cgit";
 	};
 
 	# create cfg symlink
