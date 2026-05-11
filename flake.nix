@@ -44,6 +44,16 @@
         ./hosts/skeleton/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.sops-nix.nixosModules.sops
+
+        {
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
+          };
+
+          home-manager.sharedModules = [
+            inputs.sops-nix.homeManagerModules.sops
+          ];
+        }
       ];
 
     };
@@ -55,5 +65,6 @@
         inputs.sops-nix.nixosModules.sops
       ];
     };
+
   };
 }
