@@ -9,6 +9,10 @@
 			"--node-ip=155.246.36.10"
   	  	  	"--disable-network-policy"
   	  	  	"--flannel-backend=none"
+			"--disable-kube-proxy"
+			"--disable=traefik"
+			"--disable=servicelib"
+			"--disable=metrics-server"
   	  	];
   	};
 }
