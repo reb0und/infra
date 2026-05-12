@@ -11,6 +11,7 @@
   	  	role = "server";
   	  	clusterInit = true;
   	  	extraFlags = [
+			"--write-kubeconfig-mode=0644"
 			"--resolv-conf=k3s-resolv.conf"
 			"--node-ip=155.246.36.10"
   	  	  	"--disable-network-policy"
