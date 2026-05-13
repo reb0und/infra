@@ -8,6 +8,12 @@
 
 		nginx.virtualHost = "cgit.localhost";
 		nginx.location = "/";
+		nginx.virtualHosts."cgit.localhost".listen = [
+			{
+				addr = "0.0.0.0";
+				port = 8081;
+			}
+		];
 
 		repos = {
 			# @TODO: Link remote source here
