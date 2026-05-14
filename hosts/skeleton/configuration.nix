@@ -22,7 +22,16 @@
   networking = {
 	  hostName = "skeleton";
 	  networkmanager.enable = true;
+	  extraHosts = ''
+	  100.76.86.83 qbt.internal
+	  100.76.86.83 radarr.internal
+	  100.76.86.83 sonarr.internal
+	  100.76.86.83 prowlarr.internal
+	  100.76.86.83 jackett.internal
+	  100.76.86.83 jellyfin.internal
+	  '';
   };
+
 
   nix.package = pkgs.lixPackageSets.stable.lix;
 
