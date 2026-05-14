@@ -12,7 +12,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.kernelParams = [
-    "video=HDMI-A-1:1920x1080@144"
+    "video=HDMI-A-1:1920x1080@165"
   ];
   boot.extraModulePackages = [ ];
 
