@@ -53,7 +53,7 @@
         {
           publicKey = "z7tCgSZWI0a5LkkLQrqo5YAV/q2chYOz16uwGxQk0WA=";
           allowedIPs = [ "0.0.0.0/0" ];
-          endpoint = "54.163.192.2:8172";
+          endpoint = "54.163.11.42:8172";
           persistentKeepalive = 25;
         }
       ];
