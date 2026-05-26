@@ -12,5 +12,6 @@
 		./ghostty.nix
 		./tiny.nix
 		./w3m.nix
+		./gdb.nix
 	];
 }
