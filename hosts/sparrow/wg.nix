@@ -42,7 +42,7 @@
       ip rule add priority 99 from 10.100.0.2/32 lookup 51820
 
       ip rule del priority 98 2>/dev/null || true
-      ip rule add priority 98 from 10.8.0.2/32 lookup 51821
+      ip rule add priority 98 from 10.2.0.2/32 lookup 51821
 
       ip route flush cache || true
     '';
@@ -82,7 +82,8 @@
     };
 
     wg-proton-vpn = {
-      ips = [ "10.8.0.2/32" ];
+      ips = [ "10.2.0.2/32" ];
+      mtu = 1280;
       listenPort = 51821;
 
       # @TODO: Encrypt using SOPS
