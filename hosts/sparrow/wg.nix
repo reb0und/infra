@@ -21,35 +21,35 @@
       "wireguard-wg0.service"
       "wireguard-wg-proton-vpn.service"
     ];
-  
+
     path = [ pkgs.iproute2 ];
-  
+
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
     };
-  
+
     script = ''
       set -x
-  
+
       ip route replace 10.100.1.0/32 dev wg0
-      ip route replace 10.200.0.0/32 dev wg0
+      ip route replace 10.200.0.0/24 dev wg0
 
       ip route replace default dev wg0 table 51820
       ip route replace default dev wg-proton-vpn table 51821
-  
+
       ip rule del priority 99 2>/dev/null || true
       ip rule add priority 99 from 10.100.0.2/32 lookup 51820
 
       ip rule del priority 98 2>/dev/null || true
       ip rule add priority 98 from 10.8.0.2/32 lookup 51821
-  
+
       ip route flush cache || true
     '';
-  
+
     preStop = ''
       ip route del 10.100.1.0/32 dev wg0 2>/dev/null || true     
-      ip route del 10.200.0.0/32 dev wg0 2>/dev/null || true         
+      ip route del 10.200.0.0/24 dev wg0 2>/dev/null || true         
 
       ip rule del priority 99 2>/dev/null || true
       ip route flush table 51820 || true
