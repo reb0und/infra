@@ -95,9 +95,9 @@
 
       peers = [
         {
-          publicKey = "3XROzgS72QDRKE3Z2XcnppVNFPaLFCeSRDmsCe6EGws=";
+          publicKey = "MNTtBSAv3VQ8W059Rbf7pQ37WDxQ4h5vkhmBARjmmiU=";
           allowedIPs = [ "0.0.0.0/0" ];
-          endpoint = "149.34.251.138:51820";
+          endpoint = "151.243.141.159:51820";
           persistentKeepalive = 25;
         }
       ];
