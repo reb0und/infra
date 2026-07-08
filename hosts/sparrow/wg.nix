@@ -80,7 +80,7 @@
       listenPort = 51821;
 
       # @TODO: Encrypt using SOPS
-      privateKeyFile = "/home/dominic/keys/wg/private_proton_vpn"; 
+      privateKeyFile = "/home/dominic/keys/wg_proton_vpn/private"; 
 
       allowedIPsAsRoutes = false;
 
