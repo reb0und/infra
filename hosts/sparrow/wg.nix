@@ -35,6 +35,9 @@
       ip route replace 10.100.0.1/32 dev wg0
       ip route replace 10.200.0.0/24 dev wg0
 
+      ip route replace 10.2.0.1/32 dev wg-proton-vpn src 10.2.0.2
+      ip route replace 10.2.0.1/32 dev wg-proton-vpn src 10.2.0.2 table 51821
+
       ip route replace 10.2.0.1/32 dev wg-proton-vpn table 51821
 
       ip route replace default dev wg0 table 51820
