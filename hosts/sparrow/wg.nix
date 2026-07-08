@@ -35,7 +35,6 @@
       ip route replace 10.100.0.1/32 dev wg0
       ip route replace 10.200.0.0/24 dev wg0
 
-      ip route replace 10.2.0.1/32 dev wg-proton-vpn
       ip route replace 10.2.0.1/32 dev wg-proton-vpn table 51821
 
       ip route replace default dev wg0 table 51820
@@ -53,7 +52,6 @@
     preStop = ''
       ip route del 10.100.0.1/32 dev wg0 2>/dev/null || true
       ip route del 10.200.0.0/24 dev wg0 2>/dev/null || true
-      ip route del 10.2.0.1/32 dev wg-proton-vpn 2>/dev/null || true
 
       ip rule del priority 99 2>/dev/null || true
       ip route flush table 51820 || true
