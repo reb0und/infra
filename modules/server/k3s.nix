@@ -34,7 +34,7 @@
   	  	extraFlags = [
 			"--write-kubeconfig-mode=0644"
 			"--resolv-conf=/etc/k3s-resolv.conf"
-			"--node-ip=155.246.36.12"
+			"--node-ip=155.246.36.13"
   	  	  	"--disable-network-policy"
   	  	  	"--flannel-backend=none"
 			"--disable-kube-proxy"
