@@ -21,5 +21,6 @@
 		fastfetch
 		fd
 		sops
+		qemu
 	];
 }
