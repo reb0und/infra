@@ -1,5 +1,5 @@
 { pkgs, config, home, ... }:
 
 {
-	home.packages = [ pkgs.swww ];
+	home.packages = [ pkgs.awww ];
 }

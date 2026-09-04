@@ -5,7 +5,7 @@
 		./hyprland.nix
 		./waybar.nix
 		./mako.nix
-		./swww.nix
+		./awww.nix
 		./rofi.nix
 		./nmapplet.nix
 		./hyprlock.nix

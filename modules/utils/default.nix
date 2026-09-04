@@ -22,5 +22,7 @@
 		fd
 		sops
 		qemu
+		qbittorrent
+		proton-vpn-cli
 	];
 }
