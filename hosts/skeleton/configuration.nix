@@ -93,6 +93,8 @@
     #media-session.enable = true;
   };
 
+  services.usbmuxd.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -135,6 +137,10 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     fish
     ghostty
+
+    # iOS device interface
+    libimobiledevice
+    ifuse
   #  wget
   ];
 
