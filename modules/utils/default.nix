@@ -23,6 +23,6 @@
 		sops
 		qemu
 		qbittorrent
-		proton-vpn-cli
+		proton-vpn
 	];
 }
