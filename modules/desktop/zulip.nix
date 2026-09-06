@@ -7,7 +7,7 @@ in
 {
 	home.packages = [
 		pkgs.zulip
-		pkgs-unstable.zulip-term
+		# pkgs-unstable.zulip-term
 	];
 
 	sops.secrets.zuliprc = {
