@@ -66,5 +66,25 @@
       ];
     };
 
+    nixosConfigurations.komamura = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/komamura/configuration.nix
+        inputs.home-manager.nixosModules.default
+        inputs.sops-nix.nixosModules.sops
+
+        {
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
+          };
+
+          home-manager.sharedModules = [
+            inputs.sops-nix.homeManagerModules.sops
+          ];
+        }
+      ];
+
+    };
+
   };
 }
