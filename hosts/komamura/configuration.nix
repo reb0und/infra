@@ -1,3 +1,5 @@
+# @TODO: Patch tmux config and other machine specific items
+
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
@@ -182,6 +184,8 @@
   security.pam.services = {
     login.u2fAuth = true;
     sudo.u2fAuth = true;
+    hyprlock.u2f.enable = true;
+    gdm-password.u2f.enable = true;
   };
 
   virtualisation.docker.enable = true;

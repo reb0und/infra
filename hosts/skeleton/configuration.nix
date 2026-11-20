@@ -182,6 +182,8 @@
   security.pam.services = {
     login.u2fAuth = true;
     sudo.u2fAuth = true;
+    hyprlock.u2f.enable = true;
+    gdm-password.u2f.enable = true;
   };
 
   virtualisation.docker.enable = true;
